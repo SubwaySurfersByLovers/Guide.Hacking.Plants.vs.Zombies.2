@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <title>YT:@SubwaySurfersByLovers</title>
+    <link rel="shortcut icon" href="images/favicon.ico">
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/templatemo-lugx-gaming.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+  </head>
+
+<body>
+
+  <!-- ***** Preloader Start ***** -->
+  <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Preloader End ***** -->
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+              <nav class="main-nav">
+                <!-- ***** Logo Start ***** -->
+                <a href="index1.html" class="logo">
+                  <h4 style="color: #ffffff;"> SSB Lovers Store</h4>
+              </a>
+                <!-- ***** Logo End ***** -->
+                <!-- ***** Menu Start ***** -->
+                <ul class="nav">
+                  <li><a href="index.html">Guide/PP.dat</a></li>
+                  <li><a href="index1.html">Guide/OBB</a></li>
+                  <li><a href="contact.html" class="active">Contact Us</a></li>
+                </ul>
+                <a class='menu-trigger'>
+                    <span>Menu</span>
+                </a>
+                <!-- ***** Menu End ***** -->
+            </nav>
+          </div>
+        </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+
+  <div class="page-heading header-text">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h3>Guide/OBB</h3>
+          <span class="breadcrumb"><a href="index1.html">Home</a>  >  Plants vs Zombies 2 > OBB</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="more-info">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="tabs-content">
+            <div class="row">
+              <div class="nav-wrapper ">
+                <ul class="nav nav-tabs" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="description-tab" data-bs-toggle="tab" data-bs-target="#description" type="button" role="tab" aria-controls="description" aria-selected="true">Plants vs Zombies 2  Guide/OBB Structure (Archived)</button>
+                  </li>
+                </ul>
+              </div>              
+              <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="description" role="tabpanel" aria-labelledby="description-tab">
+                  <p>
+                  <strong>Tools Required</strong> <a href="https://subwaysurfersbylovers.github.io/SSB.Lovers.Store/list_jasa.html">download</a>
+                  <br><br>
+                    In Plants vs. Zombies 2, an <strong>OBB (Opaque Binary Blob)</strong> or <strong>RSB</strong> file is an archive file containing the assets and configuration settings that are used in game. These include textures, animations, level and world data, plant and zombie properties, text, and more.
+                    <br><br>
+                    This page serves as reference material, detailing the location and directory structure of the OBB/RSB, as well as providing descriptions of the custom file formats found within it. It does not go over how to extract or repack an OBB/RSB or how to decode the custom file formats.
+                    <br><br>
+                    <strong>International, Android</strong><br>
+                    After installing Plants vs. Zombies 2 from the Play Store, you can find an OBB by navigating to /obb/com.ea.game.pvz2_row/ on the Android device's file system.
+                    <br><br>
+                    <strong>Chinese, Android</strong><br>
+                    While reading an APK file of the game as a ZIP file, the RSBs will be located in ./assets/ as RSB.SMF files—there is no central RSB. The assets in these files are also lower quality than those found in the iOS's RSB.
+                    <br><br>
+                    <strong>Chinese, iOS</strong><br>
+                    While reading an IPA file of the game as a ZIP file, the RSB will be located at ./Payload/PvZ2.app/main.rsb
+                    <br><br>
+                    <strong>Internal directory structure</strong><br>
+                    The following is a list of especially notable directories/files in the internal directory structure of an extracted Android international OBB. OBBs/RSBs from other locations will have a similar but not identical structure. Because not all included files/directories are listed here, it may be helpful to look at some of those other files to find what you need.
+                    <br><br>
+                    <strong>./ - The root directory of the extraction.</strong><br>
+                    <strong>atlases/</strong> - Contains the texture atlases (spritesheets/textures) used in the game, as PTX files.
+                    <br><strong>effects/</strong> - Contains color filters (likely?) appled to images and sprites in the game, as POPFX files.
+                    <br><strong>images/</strong> - Contains the animations used in the game, as PAM files.
+                    <br><strong>packages/</strong> - Contains properties and configuration of levels, zombies, plants, etc., as RTON files.
+                    <br>a. <strong>HotUI/</strong> - Contains settings for UI elements.
+                    <br>b. <strong>levels/</strong> - Contains settings and properties for the levels in the game, including campaign levels, Arena and Penny's Pursuit levels, piñata parties, minigame levels, danger room levels, etc. (ARCADE = VASEBREAKER / CHALLENGE_LEVELS: includs epic quest / RIFTS = Penny's Pursuit)
+                    <br>c. <strong>worlds/</strong> - Contains settings that specify the layout of world maps and the levels accessible from them, for both the campaign and Penny's Pursuit.
+                    <br>d. <strong>Allowed_Universal_Links.rton</strong> - A file which specifies which universal link links to which deeplink.
+                    <br>e. <strong>Arcade_Config.rton</strong> - A file which specifies the rewards and levels from mini games (vasebreaker, eggbreaker, firebreaker, wasabiwhip and beghouled)
+                    <br>f. <strong>LawnStrings-**-**.rton</strong> - Several files specifying the text used in game, like dialogue, almanac descriptions, and item names. The files themselves are separated by language.
+                    <br>g. <strong>PlantLevels.rton</strong> - A file specifying how plant properties change as plants level up, such as sun cost, seed packet cooldown, attack DPS, etc., and the requirements (cost, seed packets) for leveling them up.
+                    <br>h. <strong>PlantTypes.rton</strong> - A file specifying <a href="https://ernestoam.fandom.com/wiki/Plants_vs._Zombies_2_Internal_Names/Plants">plant "types"</a>, and properties such as the textures, audio, animation file, almanac backdrop, and property set from PLANTPROPERTIES.RTON that they will use.
+                    <br>i. <strong>PlantProperties.rton</strong> - A file specifying general properties about plant types, ranging from base sun cost, base hitpoints, base seed packet cooldown, and base plant food duration to whether it can be planted on water or whether the player can use Wall-Nut First Aid on it.
+                    <br>j. <strong>ZombieTypes.rton</strong> - A file specifying <a href="https://ernestoam.fandom.com/wiki/Plants_vs._Zombies_2_Internal_Names/Zombies">zombie "types"</a>, and properties such as the textures, audio, animation file, home world, and property set from ZOMBIEPROPERTIES.RTON that they will use. Different zombie types may represent the same zombie, but for different situations (e.g. a zombot in a campaign level, a zombot from the extended campaign, a zombot in Penny's Pursuit, and a zombot in Arena use different types).
+                    <br>k. <strong>ZombieProperties.rton</strong> - A file specifying general properties about zombie types, ranging from base speed, base attack DPS, and hitbox size to whether it can spawn plant food or be flicked using Power Flick.
+                    <br><strong>primefonts/</strong> - Contains the fonts used in the game, as TTF files.
+                    <br><strong>properties/</strong> - Contains the credits, RESOURCES.RTON, and other files.
+                    <br>a. <strong>resources.rton</strong> - A file that provides information about the widths and heights of the atlases, how to crop and name sprites from the atlases, and the "resource groups" the sprites belong to.
+                    <br><strong>soundbanks/</strong> - Contains soundbanks used in the game, as BNK files.
+                    <br><strong>streamingwaves/</strong> - Contains other audio files used in the game, as WEM files.
+                    <br><br>
+                    <strong>CDN mirror files</strong>
+                    <br>Some files in the OBB's packages folder, such as piñata party RTONs and LawnStrings RTONs, have counterparts that are downloaded from the game's server after the game has been updated. On Android international, these files will be downloaded to /files/No_Backup/CDN.#.#/ with a directory structure similar to that of the packages folder.
+                    <br><br>After these files are downloaded, the game will first try to use these files instead of the versions in the OBB. This means that, if changes were made to files with CDN counterparts in the OBB, they may not appear in-game, because they are being superseded by their CDN counterparts.
+                    <br><br>To get around this, someone with a modified OBB could try disabling the internet connection before the CDN files can be downloaded as the game is starting up. If the CDN files are already present, however, one can simply replace them with the modified versions. The game will not attempt to redownload CDN files that are already present, so the modified files will not be changed.
+                    <br><br>Only packages files which have downloaded CDN counterparts and CDN counterparts for files in the packages/levels folder will be read out from the CDN folder. This means that an RTON from the OBB which does not have a downloaded CDN counterpart will not be read from the CDN folder, unless it is from packages/levels and placed in the corresponding subdirectory in the CDN folder.
+                    <br><br>
+                    <strong>Asset file formats</strong><br>
+                    Most assets from an OBB/RSB use proprietary file formats/extensions. These include:
+                    <br><strong>RTON</strong> =	A compressed format of JSON, a file format used for organizing properties and lists as key-value pairs.
+                    <br><strong>PTX</strong> = A compressed format of an image, often of an atlas. PTX files in releases of the game from different locations/platforms use different compression schemas:
+                    <br>a. <strong>Android international - RGBA32 or ETC1a</strong>
+                    <br>b. <strong>Android Chinese - RGBA32 (?) (Alpha format unknown)</strong>
+                    <br>c. <strong>iOS - ARGB32 or 4-bpp PVRTC</strong>
+                    <br><strong>PAM</strong> = Short for "PopAnim"; contains the data for animations and how sprites should move.
+                    <br><strong>BNK</strong> = A Wwise soundbank, used to contain groups of audio files. These can be split into WEM files.
+                    <br><strong>WEM</strong> = Another format by Wwise, used to encode a single audio file. Plants vs. Zombies 2 (generally?) uses mono audio and the Vorbis compression format.
+                    <br><strong>POPFX</strong> = A file containing a color filter in the form of an OpenGL fragment shader (written in OpenGL Shading Lanugage) that (likely?) can be applied to images and sprites in-game.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="col-lg-12">
+        <p><a href="https://m.youtube.com/@subwaysurfersbylovers" target="_blank">YT:@SubwaySurfersByLovers</a><br>Version 2.0.0</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/js/isotope.min.js"></script>
+  <script src="assets/js/owl-carousel.js"></script>
+  <script src="assets/js/counter.js"></script>
+  <script src="assets/js/custom.js"></script>
+
+  </body>
+</html>
